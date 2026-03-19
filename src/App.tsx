@@ -107,7 +107,7 @@ const Navigation = () => {
 const SectionHeader = ({ number, title, subtitle }: { number: string; title: string; subtitle?: string }) => (
   <div className="space-y-4 mb-8 md:mb-12">
     <div className="flex items-center gap-4">
-      <span className="text-[10px] font-bold tracking-[0.3em] text-[#C5A059] uppercase">{number}</span>
+      <span className="text-[10px] font-bold tracking-[0.3em] text-[#111827] uppercase">{number}</span>
       <div className="h-px flex-1 bg-[#E5E4E2]" />
     </div>
     <h2 className="text-2xl md:text-4xl font-bold text-[#141414]">{title}</h2>
@@ -132,7 +132,7 @@ const Footer = () => {
           </p>
         </div>
         <div className="space-y-4">
-          <h4 className="text-[10px] font-bold uppercase tracking-widest text-[#C5A059]">Ecosystem</h4>
+          <h4 className="text-[10px] font-bold uppercase tracking-widest text-white">Ecosystem</h4>
           <ul className="space-y-2 text-xs text-gray-400">
             <li><button onClick={() => navigate('framework')} className="hover:text-white transition-colors">Framework</button></li>
             <li><button onClick={() => navigate('academy')} className="hover:text-white transition-colors">Academy</button></li>
@@ -141,7 +141,7 @@ const Footer = () => {
           </ul>
         </div>
         <div className="space-y-4">
-          <h4 className="text-[10px] font-bold uppercase tracking-widest text-[#C5A059]">Network</h4>
+          <h4 className="text-[10px] font-bold uppercase tracking-widest text-white">Network</h4>
           <ul className="space-y-2 text-xs text-gray-400">
             <li><button onClick={() => navigate('community')} className="hover:text-white transition-colors">Community</button></li>
             <li><button className="hover:text-white transition-colors">Events</button></li>
@@ -149,7 +149,7 @@ const Footer = () => {
           </ul>
         </div>
         <div className="space-y-4">
-          <h4 className="text-[10px] font-bold uppercase tracking-widest text-[#C5A059]">Contact</h4>
+          <h4 className="text-[10px] font-bold uppercase tracking-widest text-white">Contact</h4>
           <ul className="space-y-2 text-xs text-gray-400">
             <li><button className="hover:text-white transition-colors">Inquiries</button></li>
             <li><button className="hover:text-white transition-colors">Press</button></li>
@@ -185,7 +185,7 @@ const HomePage = () => {
           >
             <h1 className="text-4xl md:text-7xl font-bold tracking-tight text-[#141414] leading-[1.1] md:leading-[1.05]">
               AI is advancing. <br className="hidden md:block"/>
-              <span className="text-[#C5A059]">Systems are not.</span>
+              <span className="text-[#111827]">Systems are not.</span>
             </h1>
             <p className="text-lg md:text-2xl text-gray-500 font-light max-w-3xl leading-relaxed">
               Matrix360 provides the structure for the intelligent enterprise. We bridge the gap between machine capability and human strategy through Hybrid Intelligence.
@@ -223,7 +223,7 @@ const HomePage = () => {
                   "Data without interpretation"
                 ].map((text, i) => (
                   <li key={i} className="flex items-center gap-3 text-[10px] md:text-sm font-bold uppercase tracking-widest text-[#141414]">
-                    <div className="w-1.5 h-1.5 bg-[#C5A059]" />
+                    <div className="w-1.5 h-1.5 bg-[#111827]" />
                     {text}
                   </li>
                 ))}
@@ -253,8 +253,8 @@ const HomePage = () => {
               { icon: Cpu, title: "Machine Scale", desc: "AI handles the 'how'. It processes data and identifies patterns at infinite scale." },
               { icon: Network, title: "Unified OS", desc: "Matrix360 OS binds them together into a high-performance environment." }
             ].map((item, i) => (
-              <div key={i} className="p-8 md:p-10 bg-white border border-[#E5E4E2] space-y-4 md:space-y-6 hover:border-[#C5A059] transition-colors group">
-                <item.icon className="w-6 h-6 md:w-8 md:h-8 text-[#C5A059] group-hover:scale-110 transition-transform" />
+              <div key={i} className="p-8 md:p-10 bg-white border border-[#E5E4E2] space-y-4 md:space-y-6 hover:border-[#111827] transition-colors group">
+                <item.icon className="w-6 h-6 md:w-8 md:h-8 text-[#111827] group-hover:scale-110 transition-transform" />
                 <h4 className="text-lg md:text-xl font-bold">{item.title}</h4>
                 <p className="text-xs md:text-sm text-gray-500 leading-relaxed">{item.desc}</p>
               </div>
@@ -268,18 +268,18 @@ const HomePage = () => {
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12 md:gap-20">
           <div className="flex-1 space-y-6 md:space-y-8">
             <div className="flex items-center gap-4">
-              <span className="text-[10px] font-bold tracking-[0.3em] text-[#C5A059] uppercase">03 / THE OPERATING SYSTEM</span>
+              <span className="text-[10px] font-bold tracking-[0.3em] text-white uppercase">03 / THE OPERATING SYSTEM</span>
               <div className="h-px flex-1 bg-white/10" />
             </div>
-            <h2 className="text-3xl md:text-5xl font-bold leading-tight">Matrix360 OS. <br className="hidden md:block"/>The infrastructure for the intelligent enterprise.</h2>
+            <h2 className="text-3xl md:text-5xl font-bold leading-tight text-white" style={{ color: '#FFFFFF' }}>Matrix360 OS. <br className="hidden md:block"/>The infrastructure for the intelligent enterprise.</h2>
             <p className="text-base md:text-lg text-gray-400 font-light leading-relaxed">
               Deploy Hybrid Intelligence across your organization. Matrix360 OS provides the governance and visibility required to scale intelligence safely.
             </p>
-            <button onClick={() => navigate('os-access')} className="btn-primary">Request Access</button>
+            <button onClick={() => navigate('os-access')} className="btn-white">Request Access</button>
           </div>
           <div className="w-full md:w-1/3 aspect-square bg-white/5 border border-white/10 flex items-center justify-center relative overflow-hidden">
-            <Terminal className="w-16 h-16 md:w-24 md:h-24 text-[#C5A059] opacity-50" />
-            <div className="absolute inset-0 bg-gradient-to-tr from-[#C5A059]/20 to-transparent" />
+            <Terminal className="w-16 h-16 md:w-24 md:h-24 text-white opacity-50" />
+            <div className="absolute inset-0 bg-gradient-to-tr from-white/20 to-transparent" />
           </div>
         </div>
       </section>
@@ -324,7 +324,7 @@ const FrameworkPage = () => {
                 { title: "Verification", desc: "Continuous validation of intelligence outputs." }
               ].map((item, i) => (
                 <div key={i} className="flex gap-4 md:gap-6">
-                  <div className="shrink-0 w-10 h-10 bg-[#F9F8F6] border border-[#E5E4E2] flex items-center justify-center text-[#C5A059] font-bold">
+                  <div className="shrink-0 w-10 h-10 bg-[#F9F8F6] border border-[#E5E4E2] flex items-center justify-center text-[#111827] font-bold">
                     {i + 1}
                   </div>
                   <div className="space-y-2">
@@ -336,27 +336,27 @@ const FrameworkPage = () => {
             </div>
           </div>
           <div className="bg-[#141414] text-white p-8 md:p-12 space-y-8 md:space-y-12">
-            <h3 className="text-2xl md:text-3xl font-bold">The Objective.</h3>
+            <h3 className="text-2xl md:text-3xl font-bold text-white" style={{ color: '#FFFFFF' }}>The Objective.</h3>
             <p className="text-base md:text-lg text-gray-400 font-light leading-relaxed">
               To build organizations that are fundamentally more intelligent through structured human-machine collaboration.
             </p>
             <div className="pt-8 md:pt-12 border-t border-white/10 space-y-6">
-              <p className="text-sm font-bold uppercase tracking-widest text-[#C5A059]">Implementation Status</p>
+              <p className="text-sm font-bold uppercase tracking-widest text-white">Implementation Status</p>
               <div className="space-y-4">
                 <div className="flex justify-between text-xs uppercase tracking-widest">
                   <span>Phase 1: Assessment</span>
                   <span>10%</span>
                 </div>
                 <div className="h-1 bg-white/10 w-full">
-                  <div className="h-full bg-[#C5A059] w-[10%]" />
+                  <div className="h-full bg-white w-[10%]" />
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="text-center space-y-8 md:space-y-12 pt-16 md:pt-24 border-t border-[#E5E4E2]">
-          <h2 className="text-2xl md:text-4xl font-bold">Start your implementation.</h2>
+        <div className="text-center space-y-8 md:space-y-12 pt-16 md:pt-24 pb-16 md:pb-24 border-t border-white/10 bg-[#141414] text-white -mx-6 px-6">
+          <h2 className="text-2xl md:text-4xl font-bold text-white">Start your implementation.</h2>
           <div className="flex flex-col md:flex-row justify-center gap-4 md:gap-6">
             <button onClick={() => navigate('assessment')} className="btn-accent">Begin Assessment</button>
             <button onClick={() => navigate('os')} className="btn-secondary">Explore Matrix360 OS</button>
@@ -387,7 +387,7 @@ const AcademyPage = () => {
           ].map((item, i) => (
             <div key={i} className="p-8 md:p-10 bg-white border border-[#E5E4E2] space-y-6 md:space-y-8 flex flex-col">
               <div className="space-y-2">
-                <span className="text-[10px] font-bold uppercase tracking-widest text-[#C5A059]">{item.level}</span>
+                <span className="text-[10px] font-bold uppercase tracking-widest text-[#111827]">{item.level}</span>
                 <h4 className="text-xl md:text-2xl font-bold">{item.title}</h4>
               </div>
               <p className="text-xs md:text-sm text-gray-500 leading-relaxed flex-1">{item.desc}</p>
@@ -407,7 +407,7 @@ const AcademyPage = () => {
             <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {["Certification", "Strategic Leadership", "Hands-on Labs", "Expert Network"].map((text, i) => (
                 <li key={i} className="flex items-center gap-2 text-[10px] md:text-xs font-bold uppercase tracking-widest text-[#141414]">
-                  <CheckCircle2 className="w-4 h-4 text-[#C5A059]" />
+                  <CheckCircle2 className="w-4 h-4 text-[#111827]" />
                   {text}
                 </li>
               ))}
@@ -457,7 +457,7 @@ const LabPage = () => {
               <p className="text-base md:text-lg text-gray-400 font-light leading-relaxed">
                 We seek researchers, engineers, and domain experts. If you are building at the intersection of human and machine intelligence, apply below.
               </p>
-              <button onClick={() => navigate('lab-apply')} className="btn-primary">Apply to Join</button>
+              <button onClick={() => navigate('lab-apply')} className="btn-white">Apply to Join</button>
             </div>
             <div className="p-6 md:p-8 border border-[#E5E4E2] space-y-6">
               <h4 className="text-sm font-bold uppercase tracking-widest">Lab Stats</h4>
@@ -498,7 +498,7 @@ const CommunityPage = () => {
             { icon: Network, title: "Knowledge Exchange", desc: "Share insights, case studies, and best practices." }
           ].map((item, i) => (
             <div key={i} className="p-8 md:p-10 bg-white border border-[#E5E4E2] space-y-4 md:space-y-6">
-              <item.icon className="w-6 h-6 md:w-8 md:h-8 text-[#C5A059]" />
+              <item.icon className="w-6 h-6 md:w-8 md:h-8 text-[#111827]" />
               <h4 className="text-lg md:text-xl font-bold">{item.title}</h4>
               <p className="text-xs md:text-sm text-gray-500 leading-relaxed">{item.desc}</p>
             </div>
@@ -506,11 +506,11 @@ const CommunityPage = () => {
         </div>
 
         <div className="text-center py-12 md:py-24 bg-[#141414] text-white space-y-8 md:space-y-12">
-          <h2 className="text-2xl md:text-4xl font-bold">Join the Network.</h2>
+          <h2 className="text-2xl md:text-4xl font-bold text-white">Join the Network.</h2>
           <p className="text-lg md:text-xl text-gray-400 font-light max-w-2xl mx-auto px-4">
             Access exclusive research, summits, and a directory of the world's leading Hybrid Intelligence practitioners.
           </p>
-          <button onClick={() => navigate('community-join')} className="btn-primary">Join the Network</button>
+          <button onClick={() => navigate('community-join')} className="btn-white">Join the Network</button>
         </div>
       </div>
     </div>
@@ -540,7 +540,7 @@ const OSPage = () => {
                 { icon: Lock, title: "Enterprise Security", desc: "Military-grade encryption and data sovereignty controls." }
               ].map((item, i) => (
                 <div key={i} className="flex gap-4 md:gap-6">
-                  <div className="shrink-0 w-10 h-10 md:w-12 md:h-12 bg-[#F9F8F6] border border-[#E5E4E2] flex items-center justify-center text-[#C5A059]">
+                  <div className="shrink-0 w-10 h-10 md:w-12 md:h-12 bg-[#F9F8F6] border border-[#E5E4E2] flex items-center justify-center text-[#111827]">
                     <item.icon className="w-5 h-5 md:w-6 md:h-6" />
                   </div>
                   <div className="space-y-2">
@@ -661,7 +661,7 @@ const AssessmentPageContent = () => {
               </>
             ) : (
               <div className="text-center space-y-8 py-8 md:py-12">
-                <div className="w-16 h-16 bg-[#C5A059] rounded-full flex items-center justify-center mx-auto">
+                <div className="w-16 h-16 bg-[#111827] rounded-full flex items-center justify-center mx-auto">
                   <CheckCircle2 className="w-8 h-8 text-white" />
                 </div>
                 <div className="space-y-4">
@@ -703,11 +703,11 @@ const EnrollmentPage = () => {
             { title: "Professional", duration: "3 Months", price: "$4,500", desc: "Advanced architectural design and governance standards." },
             { title: "Executive", duration: "9 Months", price: "$12,000", desc: "Strategic leadership and organizational transformation." }
           ].map((item, i) => (
-            <div key={i} className="p-8 md:p-10 bg-white border border-[#E5E4E2] space-y-6 md:space-y-8 flex flex-col hover:border-[#C5A059] transition-colors">
+            <div key={i} className="p-8 md:p-10 bg-white border border-[#E5E4E2] space-y-6 md:space-y-8 flex flex-col hover:border-[#111827] transition-colors">
               <div className="space-y-2">
                 <h4 className="text-xl md:text-2xl font-bold">{item.title}</h4>
                 <div className="flex justify-between items-center">
-                  <span className="text-[10px] font-bold uppercase tracking-widest text-[#C5A059]">{item.duration}</span>
+                  <span className="text-[10px] font-bold uppercase tracking-widest text-[#111827]">{item.duration}</span>
                   <span className="text-base md:text-lg font-bold">{item.price}</span>
                 </div>
               </div>
@@ -717,7 +717,7 @@ const EnrollmentPage = () => {
                 <ul className="space-y-2">
                   {["Weekend Sessions", "Live Mentorship", "Project Labs", "Certification"].map((t, j) => (
                     <li key={j} className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest text-[#141414]">
-                      <CheckCircle2 className="w-3 h-3 text-[#C5A059]" />
+                      <CheckCircle2 className="w-3 h-3 text-[#111827]" />
                       {t}
                     </li>
                   ))}
@@ -729,7 +729,7 @@ const EnrollmentPage = () => {
         </div>
 
         <div className="bg-[#141414] text-white p-8 md:p-12 space-y-6 md:space-y-8">
-          <h3 className="text-xl md:text-2xl font-bold">Time Commitment.</h3>
+          <h3 className="text-xl md:text-2xl font-bold text-white" style={{ color: '#FFFFFF' }}>Time Commitment.</h3>
           <p className="text-sm md:text-base text-gray-400 font-light leading-relaxed">
             Our programs are structured for working professionals. Sessions take place on weekends, with asynchronous lab work during the week. Expect 8-10 hours of commitment per week.
           </p>
@@ -764,7 +764,7 @@ const OSAccessPage = () => {
                 { icon: Database, title: "Intelligence Ledger", desc: "Maintain a transparent record of every machine-assisted decision." }
               ].map((item, i) => (
                 <div key={i} className="flex gap-4 md:gap-6">
-                  <div className="shrink-0 w-10 h-10 md:w-12 md:h-12 bg-white border border-[#E5E4E2] flex items-center justify-center text-[#C5A059]">
+                  <div className="shrink-0 w-10 h-10 md:w-12 md:h-12 bg-white border border-[#E5E4E2] flex items-center justify-center text-[#111827]">
                     <CheckCircle2 className="w-5 h-5 md:w-6 md:h-6" />
                   </div>
                   <div className="space-y-2">
@@ -777,17 +777,17 @@ const OSAccessPage = () => {
           </div>
 
           <div className="bg-[#141414] text-white p-8 md:p-12 space-y-6 md:space-y-8">
-            <h3 className="text-xl md:text-2xl font-bold">Who it is for.</h3>
+            <h3 className="text-xl md:text-2xl font-bold text-white" style={{ color: '#FFFFFF' }}>Who it is for.</h3>
             <p className="text-sm md:text-base text-gray-400 font-light leading-relaxed">
               Matrix360 OS is designed for enterprise leadership, operations heads, and intelligence architects who need to scale AI safely and effectively.
             </p>
             <div className="pt-6 md:pt-8 border-t border-white/10 space-y-4 md:space-y-6">
-              <h4 className="text-sm font-bold uppercase tracking-widest text-[#C5A059]">Request Access</h4>
+              <h4 className="text-sm font-bold uppercase tracking-widest text-white">Request Access</h4>
               <p className="text-[10px] md:text-xs text-gray-500 leading-relaxed">
                 Your request will be reviewed by our onboarding team. We prioritize organizations ready for systemic transformation.
               </p>
               <div className="flex flex-col gap-4">
-                <button className="btn-primary">Request Access</button>
+                <button className="btn-white">Request Access</button>
                 <button onClick={() => navigate('assessment')} className="btn-accent">Begin Assessment</button>
               </div>
             </div>
@@ -817,14 +817,14 @@ const LabApplicationPage = () => {
               We seek individuals with deep expertise in cognitive science, machine learning, systems architecture, or domain-specific decision-making.
             </p>
             <div className="space-y-6 md:space-y-8">
-              <h4 className="text-sm font-bold uppercase tracking-widest text-[#C5A059]">Contribution Types</h4>
+              <h4 className="text-sm font-bold uppercase tracking-widest text-[#111827]">Contribution Types</h4>
               {[
                 { title: "Research", desc: "Define new methodologies for human-machine collaboration." },
                 { title: "Data", desc: "Contribute high-quality datasets for training and validation." },
                 { title: "Validation", desc: "Stress-test intelligence outputs in real-world scenarios." }
               ].map((item, i) => (
                 <div key={i} className="flex gap-4 items-start">
-                  <div className="w-1.5 h-1.5 bg-[#C5A059] mt-2" />
+                  <div className="w-1.5 h-1.5 bg-[#111827] mt-2" />
                   <div className="space-y-1">
                     <h5 className="font-bold text-sm md:text-base">{item.title}</h5>
                     <p className="text-xs md:text-sm text-gray-500">{item.desc}</p>
@@ -834,8 +834,8 @@ const LabApplicationPage = () => {
             </div>
           </div>
 
-          <div className="bg-white p-8 md:p-12 border border-[#E5E4E2] space-y-6 md:space-y-8">
-            <h3 className="text-xl md:text-2xl font-bold">What you gain.</h3>
+          <div className="bg-[#141414] text-white p-8 md:p-12 space-y-6 md:space-y-8">
+            <h3 className="text-xl md:text-2xl font-bold text-white" style={{ color: '#FFFFFF' }}>What you gain.</h3>
             <ul className="space-y-4">
               {[
                 "Early access to Matrix360 OS core",
@@ -844,13 +844,13 @@ const LabApplicationPage = () => {
                 "Direct impact on system governance"
               ].map((t, i) => (
                 <li key={i} className="flex items-center gap-3 text-[10px] md:text-xs font-bold uppercase tracking-widest text-[#141414]">
-                  <CheckCircle2 className="w-4 h-4 text-[#C5A059]" />
+                  <CheckCircle2 className="w-4 h-4 text-[#111827]" />
                   {t}
                 </li>
               ))}
             </ul>
             <div className="flex flex-col gap-4">
-              <button className="btn-primary">Apply to Join</button>
+              <button className="btn-white">Apply to Join</button>
               <button onClick={() => navigate('assessment')} className="btn-accent">Begin Assessment</button>
             </div>
           </div>
@@ -891,22 +891,22 @@ const CommunityJoinPage = () => {
 
           <div className="bg-[#141414] text-white p-8 md:p-12 space-y-8 md:space-y-12">
             <div className="space-y-6">
-              <h3 className="text-xl md:text-2xl font-bold">Select your role.</h3>
+              <h3 className="text-xl md:text-2xl font-bold text-white" style={{ color: '#FFFFFF' }}>Select your role.</h3>
               <div className="space-y-4">
                 {[
                   { title: "Learner", desc: "Mastering the framework." },
                   { title: "Contributor", desc: "Active in research." },
                   { title: "Builder", desc: "Deploying at scale." }
                 ].map((role, i) => (
-                  <button key={i} className="w-full p-4 md:p-6 border border-white/10 text-left hover:border-[#C5A059] transition-colors group">
-                    <h5 className="font-bold uppercase tracking-widest text-[#C5A059] group-hover:text-white text-xs md:text-sm">{role.title}</h5>
+                  <button key={i} className="w-full p-4 md:p-6 border border-white/10 text-left hover:border-white transition-colors group">
+                    <h5 className="font-bold uppercase tracking-widest text-white text-xs md:text-sm">{role.title}</h5>
                     <p className="text-[10px] md:text-xs text-gray-500 mt-1">{role.desc}</p>
                   </button>
                 ))}
               </div>
             </div>
             <div className="flex flex-col gap-4">
-              <button className="btn-primary">Join Network</button>
+              <button className="btn-white">Join Network</button>
               <button onClick={() => navigate('assessment')} className="btn-accent">Begin Assessment</button>
             </div>
           </div>
@@ -933,7 +933,7 @@ const App = () => {
 
   return (
     <SystemContext.Provider value={contextValue}>
-      <div className="min-h-screen bg-[#F9F8F6] selection:bg-[#C5A059] selection:text-white">
+      <div className="min-h-screen bg-[#F9F8F6] selection:bg-[#111827] selection:text-white">
         <Navigation />
         
         <main>

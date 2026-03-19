@@ -5,8 +5,8 @@
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
   --color-matrix-bg: #F9F8F6; /* Warm off-white background */
   --color-matrix-ink: #141414; /* Deep charcoal / near black */
-  --color-matrix-accent: #C5A059; /* Muted gold */
-  --color-matrix-amber: #D97706; /* Subtle amber */
+  --color-matrix-accent: #111827; /* Dark grey */
+  --color-matrix-amber: #1f2937; /* Lighter dark grey */
   --color-matrix-blue: #1E3A8A; /* Deep blue */
   --color-matrix-border: #E5E4E2;
 }
@@ -31,11 +31,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-secondary {
-  @apply border border-matrix-ink text-matrix-ink px-8 py-4 rounded-none font-bold uppercase tracking-widest text-[11px] hover:bg-matrix-ink hover:text-white transition-all text-center block w-full md:inline-block md:w-auto;
+  @apply bg-white border-[0.5px] border-black text-black px-8 py-4 rounded-none font-bold uppercase tracking-widest text-[11px] hover:bg-gray-100 transition-all text-center block w-full md:inline-block md:w-auto;
 }
 
 .btn-accent {
   @apply bg-matrix-accent text-white px-8 py-4 rounded-none font-bold uppercase tracking-widest text-[11px] hover:opacity-90 transition-all text-center block w-full md:inline-block md:w-auto;
+}
+
+.btn-white {
+  @apply bg-white text-black px-8 py-4 rounded-none font-bold uppercase tracking-widest text-[11px] hover:bg-gray-100 transition-all text-center block w-full md:inline-block md:w-auto;
 }
 
 .section-container {
