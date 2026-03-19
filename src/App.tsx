@@ -517,30 +517,29 @@ const HomePage = () => {
         <div className="grid lg:grid-cols-12 gap-16 relative">
           <div className="lg:col-span-8 space-y-32">
             
-            {/* HERO SECTION */}
+            {/* SECTION 1 — HERO (IMPACT FIRST) */}
             <section id="hero" className="space-y-12">
               <div className="space-y-8">
                 <h1 className="text-7xl font-bold tracking-tight leading-[1.05] text-black max-w-4xl">
-                  Intelligence. Amplified. <br/>
-                  <span className="text-indigo-600 font-medium italic">For Your Business.</span>
+                  Artificial Intelligence Is Advancing. <br/>
+                  <span className="text-indigo-600 font-medium italic text-5xl md:text-6xl">But Intelligence Itself Is Not Structured.</span>
                 </h1>
-                <div className="h-1 w-32 bg-indigo-600" />
+                <div className="h-1.5 w-32 bg-indigo-600" />
               </div>
               <div className="max-w-2xl space-y-10">
                 <p className="text-2xl text-gray-600 font-light leading-relaxed">
-                  AI has advanced rapidly, but the systems to manage and trust it haven't kept up. 
-                  Fragmented tools create risk and uncertainty for the modern enterprise.
+                  Organizations are adopting AI at speed. But the systems required to guide how that intelligence is interpreted, governed, and applied are missing.
                 </p>
-                <div className="space-y-6">
+                <div className="space-y-8">
                   <p className="text-lg text-gray-500 leading-relaxed border-l-4 border-indigo-100 pl-8">
-                    Matrix360 provides the foundation. We help you build <span className="text-black font-medium">Hybrid Intelligence</span>—a unified system where human wisdom and machine speed work together with total clarity and control.
+                    We introduce <span className="text-black font-bold">Hybrid Intelligence</span> as the solution—a structured framework for the modern enterprise.
                   </p>
                   <div className="flex flex-wrap gap-4 pt-4">
                     <button 
                       onClick={() => { updateStage('IN_PROGRESS'); navigate('framework'); }}
-                      className="px-8 py-4 bg-indigo-600 text-white font-bold rounded-lg hover:bg-indigo-700 transition-all shadow-lg shadow-indigo-200"
+                      className="px-8 py-4 bg-indigo-600 text-white font-bold rounded-lg hover:bg-indigo-700 transition-all shadow-lg shadow-indigo-200 flex items-center gap-2"
                     >
-                      Explore the Framework
+                      Explore the Framework <span>→</span>
                     </button>
                     <button 
                       onClick={() => { updateStage('IN_PROGRESS'); navigate('community'); }}
@@ -553,25 +552,26 @@ const HomePage = () => {
               </div>
             </section>
 
-            {/* 1. THE PROBLEM: WHY CURRENT AI ISN'T WORKING */}
+            {/* SECTION 2 — THE PROBLEM (CLARITY) */}
             <section id="problem" className="space-y-12">
               <div className="flex items-center gap-6">
                 <span className="text-[11px] font-bold tracking-[0.2em] text-indigo-600 uppercase">01 / The Challenge</span>
                 <div className="h-px flex-1 bg-gray-100" />
               </div>
               <div className="space-y-10">
-                <h2 className="text-4xl font-bold leading-tight max-w-2xl">The Risk of Fragmented AI.</h2>
+                <h2 className="text-4xl font-bold leading-tight max-w-2xl">The Problem Is Not AI. It Is How It Is Used.</h2>
                 <div className="grid md:grid-cols-2 gap-12">
                   <div className="space-y-6">
                     <p className="text-gray-600 leading-relaxed">
-                      Most organizations are managing a collection of disconnected tools. This creates a lack of visibility, where no one knows exactly how decisions are being made or who is responsible for the results.
+                      Intelligence is being applied without a system. This lack of structure leads to outcomes that are unpredictable and difficult to verify.
                     </p>
                   </div>
                   <div className="space-y-8">
                     {[
-                      { title: "Losing the Human Touch", desc: "When we replace judgment with automated outputs, we lose the nuance and accountability that makes a business successful." },
-                      { title: "No Real Control", desc: "Without a clear way to verify AI work, you're left hoping for the best instead of knowing for sure." },
-                      { title: "Disconnected Tools", desc: "Using AI in silos creates more work, more risk, and less clarity for everyone involved." }
+                      { title: "AI produces analysis", desc: "Raw outputs are generated but often lack the necessary context for business action." },
+                      { title: "Decisions still lack structure", desc: "Without a defined process, AI integration remains experimental rather than operational." },
+                      { title: "Accountability is unclear", desc: "It is difficult to trace how a specific conclusion was reached or who owns the result." },
+                      { title: "Human judgment is being bypassed", desc: "Automation is replacing expertise instead of augmenting it, leading to systemic risk." }
                     ].map((item, i) => (
                       <div key={i} className="space-y-2">
                         <h4 className="text-sm font-bold text-gray-900 flex items-center gap-3">
@@ -586,172 +586,305 @@ const HomePage = () => {
               </div>
             </section>
 
-            {/* 2. THE SHIFT: FROM TOOLS TO SYSTEMS */}
+            {/* SECTION 3 — THE SHIFT */}
             <section id="shift" className="space-y-12">
               <div className="flex items-center gap-6">
-                <span className="text-[11px] font-bold tracking-[0.2em] text-indigo-600 uppercase">02 / The Solution</span>
+                <span className="text-[11px] font-bold tracking-[0.2em] text-indigo-600 uppercase">02 / The Shift</span>
                 <div className="h-px flex-1 bg-gray-100" />
               </div>
               <div className="bg-indigo-50 border border-indigo-100 p-12 rounded-2xl relative overflow-hidden">
                 <div className="max-w-2xl space-y-8 relative z-10">
-                  <h2 className="text-4xl font-bold">From Tools to Systems.</h2>
+                  <h2 className="text-4xl font-bold">From Tools to Intelligence Systems.</h2>
                   <p className="text-lg text-gray-700 leading-relaxed">
-                    AI shouldn't just be another tool on your desktop. It should be a core part of how your organization thinks and acts. We move you from using AI to <span className="text-indigo-600 font-bold">building systems</span> that combine human wisdom with machine speed.
+                    Artificial Intelligence expands capability. <span className="text-indigo-600 font-bold">Hybrid Intelligence</span> introduces structure. It defines how intelligence flows, how decisions are made, and how accountability is maintained.
                   </p>
-                  <div className="grid grid-cols-2 gap-8 pt-6 border-t border-indigo-200">
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-8 border-t border-indigo-200">
                     <div className="space-y-1">
-                      <span className="text-[10px] uppercase tracking-widest text-indigo-400 font-bold">Old Way</span>
-                      <p className="text-sm font-bold text-gray-900">Scattered Tools</p>
+                      <span className="text-[10px] uppercase tracking-widest text-indigo-600 font-bold">Flow</span>
+                      <p className="text-sm font-bold text-gray-900">Structured Intelligence</p>
                     </div>
                     <div className="space-y-1">
-                      <span className="text-[10px] uppercase tracking-widest text-indigo-600 font-bold">Matrix360 Way</span>
-                      <p className="text-sm font-bold text-gray-900">One Unified System</p>
+                      <span className="text-[10px] uppercase tracking-widest text-indigo-600 font-bold">Decisions</span>
+                      <p className="text-sm font-bold text-gray-900">Governed Logic</p>
+                    </div>
+                    <div className="space-y-1">
+                      <span className="text-[10px] uppercase tracking-widest text-indigo-600 font-bold">Accountability</span>
+                      <p className="text-sm font-bold text-gray-900">Clear Ownership</p>
                     </div>
                   </div>
                 </div>
               </div>
             </section>
 
-            {/* 3. WHAT IS HYBRID INTELLIGENCE: THE DOCTRINE */}
+            {/* SECTION 4 — WHAT IS HYBRID INTELLIGENCE */}
             <section id="definition" className="space-y-12">
               <div className="flex items-center gap-6">
-                <span className="text-[11px] font-bold tracking-[0.2em] text-indigo-600 uppercase">03 / The Concept</span>
+                <span className="text-[11px] font-bold tracking-[0.2em] text-indigo-600 uppercase">03 / Definition</span>
                 <div className="h-px flex-1 bg-gray-100" />
               </div>
               <div className="grid lg:grid-cols-12 gap-16">
                 <div className="lg:col-span-7 space-y-8">
-                  <h2 className="text-4xl font-bold">A Better Way to Work.</h2>
+                  <h2 className="text-4xl font-bold">What Hybrid Intelligence Actually Means.</h2>
                   <p className="text-xl text-gray-600 leading-relaxed font-light">
-                    Hybrid Intelligence is the intentional partnership between human wisdom and machine speed. It's not just "AI help"—it's a clear way to organize how you and AI work together to get the best results, every time.
+                    Hybrid Intelligence is the structured collaboration between human judgment and machine computation. It ensures that while AI generates analysis, humans define meaning and systems ensure accountability.
                   </p>
                 </div>
                 <div className="lg:col-span-5 bg-gray-900 text-white p-10 space-y-8 rounded-2xl">
-                  <h4 className="text-[10px] font-bold uppercase tracking-[0.3em] text-indigo-400">Our Core Principles</h4>
+                  <h4 className="text-[10px] font-bold uppercase tracking-[0.3em] text-indigo-400">The Collaboration Model</h4>
                   <ul className="space-y-6 text-sm">
                     <li className="flex gap-4 items-center">
                       <div className="w-6 h-6 rounded-full bg-indigo-600 flex items-center justify-center text-[10px] font-bold">01</div>
-                      <span>Humans Stay in Control</span>
+                      <span>AI generates analysis</span>
                     </li>
                     <li className="flex gap-4 items-center">
                       <div className="w-6 h-6 rounded-full bg-indigo-600 flex items-center justify-center text-[10px] font-bold">02</div>
-                      <span>AI Handles the Heavy Lifting</span>
+                      <span>Humans define meaning</span>
                     </li>
                     <li className="flex gap-4 items-center">
                       <div className="w-6 h-6 rounded-full bg-indigo-600 flex items-center justify-center text-[10px] font-bold">03</div>
-                      <span>Clear Rules for Every Step</span>
-                    </li>
-                    <li className="flex gap-4 items-center">
-                      <div className="w-6 h-6 rounded-full bg-indigo-600 flex items-center justify-center text-[10px] font-bold">04</div>
-                      <span>Total Transparency & Trust</span>
+                      <span>Systems ensure accountability</span>
                     </li>
                   </ul>
                 </div>
               </div>
             </section>
 
-            {/* 4. HOW THE SYSTEM WORKS: COGNITIVE FLOW */}
+            {/* SECTION 5 — HOW THE SYSTEM WORKS */}
             <section id="system-flow" className="space-y-12">
               <div className="flex items-center gap-6">
-                <span className="text-[11px] font-bold tracking-[0.2em] text-indigo-600 uppercase">04 / How It Works</span>
+                <span className="text-[11px] font-bold tracking-[0.2em] text-indigo-600 uppercase">04 / The Process</span>
                 <div className="h-px flex-1 bg-gray-100" />
               </div>
               <div className="space-y-10">
-                <h2 className="text-4xl font-bold">How Decisions Are Made.</h2>
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-6 relative z-10">
+                <h2 className="text-4xl font-bold">How Intelligence Becomes Action.</h2>
+                <div className="flex flex-col md:flex-row items-center justify-between gap-4 p-8 bg-gray-50 rounded-2xl border border-gray-100">
+                  {["Data", "Analysis", "Interpretation", "Decision", "Execution"].map((step, i) => (
+                    <React.Fragment key={i}>
+                      <div className="flex flex-col items-center gap-2">
+                        <div className="w-12 h-12 rounded-full bg-white border border-indigo-100 flex items-center justify-center text-indigo-600 font-bold shadow-sm">
+                          {i + 1}
+                        </div>
+                        <span className="text-xs font-bold uppercase tracking-widest text-gray-900">{step}</span>
+                      </div>
+                      {i < 4 && <div className="hidden md:block h-px flex-1 bg-indigo-100" />}
+                    </React.Fragment>
+                  ))}
+                </div>
+                <div className="max-w-2xl">
+                  <p className="text-gray-600 leading-relaxed">
+                    Hybrid Intelligence ensures this flow is <span className="text-black font-bold">structured</span>, <span className="text-black font-bold">governed</span>, and <span className="text-black font-bold">repeatable</span>. Every step is visible and every outcome is verified.
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            {/* SECTION 6 — THE ECOSYSTEM */}
+            <section id="ecosystem" className="space-y-12">
+              <div className="flex items-center gap-6">
+                <span className="text-[11px] font-bold tracking-[0.2em] text-indigo-600 uppercase">05 / The Ecosystem</span>
+                <div className="h-px flex-1 bg-gray-100" />
+              </div>
+              <div className="space-y-10">
+                <h2 className="text-4xl font-bold">A Complete Intelligence Ecosystem.</h2>
+                <div className="grid md:grid-cols-2 gap-6">
                   {[
-                    { step: "01", label: "Analysis", desc: "AI scans data and finds the patterns you need to see.", type: "AI" },
-                    { step: "02", label: "Interpretation", desc: "You add context and verify what the AI has found.", type: "Human" },
-                    { step: "03", label: "Decision", desc: "We combine both to choose the best path forward.", type: "Hybrid" },
-                    { step: "04", label: "Execution", desc: "AI carries out the plan with full tracking.", type: "AI" }
+                    { title: "Academy", desc: "Learn how to work with AI effectively through structured training.", id: "academy" },
+                    { title: "Lab", desc: "Contribute to real-world research defining the future of intelligence.", id: "lab" },
+                    { title: "Platform", desc: "Apply Hybrid Intelligence in practice with a secure operating system.", id: "platform" },
+                    { title: "Community", desc: "Engage with others building the future of intelligent systems.", id: "community" }
                   ].map((item, i) => (
-                    <div key={i} className="bg-white border border-gray-100 p-8 space-y-6 group hover:border-indigo-600 hover:shadow-lg transition-all rounded-xl">
-                      <div className="flex justify-between items-center">
-                        <span className="text-[10px] font-bold text-indigo-600 bg-indigo-50 px-2 py-1 rounded">{item.type}</span>
-                        <span className="text-[10px] font-mono text-gray-300">{item.step}</span>
+                    <button 
+                      key={i} 
+                      onClick={() => navigate(item.id)}
+                      className="bg-white text-left p-10 border border-gray-100 hover:border-indigo-600 hover:shadow-xl transition-all group rounded-xl"
+                    >
+                      <div className="space-y-4">
+                        <h4 className="text-2xl font-bold text-gray-900 group-hover:text-indigo-600 transition-colors">{item.title}</h4>
+                        <p className="text-sm text-gray-500 leading-relaxed">{item.desc}</p>
+                        <div className="pt-4 flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest text-indigo-600 opacity-0 group-hover:opacity-100 transition-opacity">
+                          Explore Now <span>→</span>
+                        </div>
                       </div>
-                      <div className="space-y-3">
-                        <h4 className="font-bold uppercase tracking-widest text-sm text-gray-900">{item.label}</h4>
-                        <p className="text-xs text-gray-500 leading-relaxed">{item.desc}</p>
-                      </div>
+                    </button>
+                  ))}
+                </div>
+              </div>
+            </section>
+
+            {/* SECTION 7 — HOW YOU PARTICIPATE */}
+            <section id="participation" className="space-y-12">
+              <div className="flex items-center gap-6">
+                <span className="text-[11px] font-bold tracking-[0.2em] text-indigo-600 uppercase">06 / Participation</span>
+                <div className="h-px flex-1 bg-gray-100" />
+              </div>
+              <div className="space-y-10">
+                <h2 className="text-4xl font-bold">There Is a Role for You in This Shift.</h2>
+                <div className="grid md:grid-cols-4 gap-8">
+                  {[
+                    { label: "Learn", desc: "Develop the expertise to architect and manage Hybrid Intelligence workflows." },
+                    { label: "Build", desc: "Collaborate on the design of next-generation human-AI interaction models." },
+                    { label: "Apply", desc: "Deploy Hybrid Intelligence within your enterprise to achieve operational excellence." },
+                    { label: "Contribute", desc: "Participate in high-level research to define the future of intelligence." }
+                  ].map((item, i) => (
+                    <div key={i} className="space-y-4 p-6 bg-gray-50 rounded-xl">
+                      <h4 className="font-bold uppercase tracking-widest text-xs text-indigo-600">{item.label}</h4>
+                      <p className="text-xs text-gray-500 leading-relaxed">{item.desc}</p>
                     </div>
                   ))}
                 </div>
               </div>
             </section>
 
-            {/* 5. THE ECOSYSTEM: INTEGRATED MODULES */}
-            <section id="ecosystem" className="space-y-12">
-              <div className="flex items-center gap-6">
-                <span className="text-[11px] font-bold tracking-[0.2em] text-indigo-600 uppercase">05 / The Ecosystem</span>
-                <div className="h-px flex-1 bg-gray-100" />
-              </div>
-              <div className="grid md:grid-cols-2 gap-6">
-                {[
-                  { title: "The Lab", desc: "Where we do the advanced work on Hybrid Intelligence.", id: "lab" },
-                  { title: "The Academy", desc: "Where you learn the skills to lead in the age of AI.", id: "academy" },
-                  { title: "The Platform", desc: "The secure system where your AI workflows actually run.", id: "platform" },
-                  { title: "The Community", desc: "A network of professionals building the future together.", id: "community" }
-                ].map((item, i) => (
-                  <button 
-                    key={i} 
-                    onClick={() => navigate(item.id)}
-                    className="bg-white text-left p-10 border border-gray-100 hover:border-indigo-600 hover:shadow-xl transition-all group rounded-xl"
-                  >
-                    <div className="space-y-6">
-                      <h4 className="text-2xl font-bold text-gray-900 group-hover:text-indigo-600 transition-colors">{item.title}</h4>
-                      <p className="text-sm text-gray-500 leading-relaxed">{item.desc}</p>
-                      <div className="pt-4 flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest text-indigo-600 opacity-0 group-hover:opacity-100 transition-opacity">
-                        Explore Now <span>→</span>
-                      </div>
-                    </div>
-                  </button>
-                ))}
-              </div>
-            </section>
-
-            {/* 6. HOW YOU PARTICIPATE: PATHWAYS */}
-            <section id="participation" className="space-y-12">
-              <div className="flex items-center gap-6">
-                <span className="text-[11px] font-bold tracking-[0.2em] text-indigo-600 uppercase">06 / Choose Your Path</span>
-                <div className="h-px flex-1 bg-gray-100" />
-              </div>
-              <div className="grid md:grid-cols-4 gap-8">
-                {[
-                  { label: "Learn", desc: "Develop the expertise to architect and manage Hybrid Intelligence workflows.", outcome: "Certified Architect" },
-                  { label: "Build", desc: "Collaborate on the design of next-generation human-AI interaction models.", outcome: "System Contributor" },
-                  { label: "Scale", desc: "Deploy Matrix360 within your enterprise to achieve operational excellence.", outcome: "Enterprise Partner" },
-                  { label: "Research", desc: "Participate in high-level research to define the future of intelligence.", outcome: "Network Member" }
-                ].map((item, i) => (
-                  <div key={i} className="space-y-4 p-6 bg-gray-50 rounded-xl">
-                    <h4 className="font-bold uppercase tracking-widest text-xs text-indigo-600">{item.label}</h4>
-                    <p className="text-xs text-gray-500 leading-relaxed">{item.desc}</p>
-                    <div className="pt-4 border-t border-gray-200">
-                      <span className="text-[9px] uppercase tracking-tighter text-gray-400 font-bold">Goal: {item.outcome}</span>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </section>
-
-            {/* 7. OUTCOME: SYSTEMIC ELEVATION */}
+            {/* SECTION 8 — OUTCOME */}
             <section id="outcome" className="space-y-12">
               <div className="flex items-center gap-6">
-                <span className="text-[11px] font-bold tracking-[0.2em] text-indigo-600 uppercase">07 / The Result</span>
+                <span className="text-[11px] font-bold tracking-[0.2em] text-indigo-600 uppercase">07 / The Outcome</span>
+                <div className="h-px flex-1 bg-gray-100" />
+              </div>
+              <div className="space-y-10">
+                <h2 className="text-4xl font-bold">What Changes for You.</h2>
+                <div className="max-w-2xl space-y-8">
+                  <p className="text-xl text-gray-600 leading-relaxed font-light">
+                    You do not just use AI. You understand how it works, control how it is applied, and build systems around it.
+                  </p>
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    {[
+                      "Understand how it works",
+                      "Control how it is applied",
+                      "Build systems around it"
+                    ].map((item, i) => (
+                      <div key={i} className="p-4 bg-indigo-50 border border-indigo-100 rounded-lg text-xs font-bold text-indigo-600 uppercase tracking-widest text-center">
+                        {item}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            {/* SECTION 8.5 — FOUNDER VOICE */}
+            <section id="founder-voice" className="py-24 space-y-16 border-t border-gray-100">
+              <div className="flex items-center gap-6">
+                <span className="text-[11px] font-bold tracking-[0.2em] text-indigo-600 uppercase">08 / Why This Work Exists</span>
+                <div className="h-px flex-1 bg-gray-100" />
+              </div>
+              
+              <div className="max-w-3xl mx-auto space-y-16">
+                <div className="space-y-8">
+                  <p className="text-3xl text-gray-900 leading-tight font-light">
+                    Artificial intelligence is reshaping how the world operates.
+                  </p>
+                  <p className="text-2xl text-gray-600 leading-relaxed font-light">
+                    But what concerned us was not the technology itself.
+                  </p>
+                  <p className="text-2xl text-gray-900 leading-relaxed font-medium">
+                    It was how it was being used.
+                  </p>
+                </div>
+
+                <div className="space-y-8 pl-8 border-l-2 border-indigo-100">
+                  <p className="text-sm font-bold text-indigo-600 uppercase tracking-widest">Across industries, we saw:</p>
+                  <ul className="space-y-6">
+                    {[
+                      "increasing dependence on AI outputs",
+                      "decisions being made without structure",
+                      "growing gaps in accountability"
+                    ].map((item, i) => (
+                      <li key={i} className="text-xl text-gray-600 font-light flex items-center gap-4">
+                        <span className="w-1.5 h-1.5 rounded-full bg-indigo-400" />
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div className="space-y-4">
+                  <p className="text-2xl text-gray-600 font-light">The problem was not capability.</p>
+                  <p className="text-4xl text-gray-900 font-bold tracking-tight">It was the absence of a system.</p>
+                </div>
+
+                <div className="py-12 border-y border-gray-100 space-y-6">
+                  <p className="text-2xl text-gray-900 font-light leading-relaxed">
+                    Hybrid Intelligence was developed to address this.
+                  </p>
+                  <div className="space-y-2">
+                    <p className="text-xl text-gray-500 font-light">Not as a tool.</p>
+                    <p className="text-xl text-gray-500 font-light">Not as a feature.</p>
+                  </div>
+                  <p className="text-2xl text-indigo-600 font-medium">
+                    But as a structured way of working with intelligence itself.
+                  </p>
+                </div>
+
+                <div className="space-y-12">
+                  <div className="flex items-center gap-6">
+                    <div className="w-16 h-16 rounded-full bg-indigo-50 flex items-center justify-center text-indigo-600 font-bold text-xl border border-indigo-100">RR</div>
+                    <div>
+                      <p className="text-gray-600 font-light">This work is led by</p>
+                      <h4 className="font-bold text-gray-900 text-xl">Ramjit Ray</h4>
+                      <p className="text-sm text-indigo-600 font-medium uppercase tracking-widest">Chief Architect of Matrix360</p>
+                    </div>
+                  </div>
+
+                  <div className="space-y-8">
+                    <p className="text-gray-600 leading-relaxed text-lg">
+                      Along with his teams, the focus has been to:
+                    </p>
+                    <ul className="space-y-6">
+                      {[
+                        "define how human judgment and AI must work together",
+                        "create systems that preserve control and accountability",
+                        "build environments where intelligence can be applied responsibly"
+                      ].map((item, i) => (
+                        <li key={i} className="flex gap-6 items-start text-gray-700">
+                          <span className="text-indigo-600 font-bold text-xl">—</span>
+                          <span className="text-lg font-light">{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+
+                <div className="pt-12 space-y-8">
+                  <div className="space-y-4">
+                    <p className="text-xl text-gray-500 font-light">This is not a finished idea.</p>
+                    <p className="text-xl text-gray-900 font-medium">It is an evolving system.</p>
+                  </div>
+                  <div className="p-10 bg-gray-900 text-white rounded-2xl space-y-4 shadow-2xl">
+                    <p className="text-sm text-indigo-400 font-bold uppercase tracking-[0.3em]">The Belief</p>
+                    <p className="text-3xl font-light leading-tight">
+                      Human intelligence must remain central.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            {/* SECTION 9 — FINAL STATEMENT */}
+            <section id="final" className="space-y-12">
+              <div className="flex items-center gap-6">
+                <span className="text-[11px] font-bold tracking-[0.2em] text-indigo-600 uppercase">09 / Conclusion</span>
                 <div className="h-px flex-1 bg-gray-100" />
               </div>
               <div className="bg-indigo-600 text-white p-16 space-y-12 rounded-3xl relative overflow-hidden shadow-2xl shadow-indigo-200">
                 <div className="max-w-3xl space-y-10 relative z-10">
-                  <h2 className="text-5xl font-bold leading-tight">The Future of Your Business is Intelligent.</h2>
+                  <h2 className="text-5xl font-bold leading-tight">This Is Not Another AI Platform.</h2>
                   <p className="text-xl opacity-90 leading-relaxed font-light">
-                    Stop managing fragmented tools. Start operating through a unified system that combines human wisdom with machine speed. Gain the power to scale with total control.
+                    This is a structured approach to working with intelligence itself. It is the foundation for a truly intelligent organization.
                   </p>
-                  <div className="pt-4">
+                  <div className="flex flex-wrap gap-6 pt-4">
                     <button 
                       onClick={() => { updateStage('IN_PROGRESS'); navigate('assessment'); }}
                       className="group flex items-center gap-6 text-2xl font-bold hover:gap-8 transition-all"
                     >
-                      Start Your Journey
+                      Begin Your Journey
                       <span className="text-3xl transition-transform duration-500">→</span>
+                    </button>
+                    <button 
+                      onClick={() => { updateStage('IN_PROGRESS'); navigate('platform'); }}
+                      className="px-8 py-4 border-2 border-white/30 text-white font-bold rounded-lg hover:bg-white/10 transition-all"
+                    >
+                      Request Access
                     </button>
                   </div>
                 </div>
@@ -797,7 +930,7 @@ const HomePage = () => {
 
                 <div className="pt-6 border-t border-gray-50">
                   <p className="text-[11px] text-gray-400 italic leading-relaxed">
-                    "AI is the engine, but Matrix360 is the steering wheel. We help you drive with confidence."
+                    "AI is the engine, but Hybrid Intelligence is the steering wheel. We help you drive with confidence."
                   </p>
                 </div>
               </div>
