@@ -1,13 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 @import "tailwindcss";
 
 @theme {
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
-  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
-  --color-matrix-bg: #ffffff;
-  --color-matrix-ink: #000000;
-  --color-matrix-accent: #2563EB;
-  --color-matrix-border: #e5e7eb;
+  --color-matrix-bg: #F9F8F6; /* Warm off-white background */
+  --color-matrix-ink: #141414; /* Deep charcoal / near black */
+  --color-matrix-accent: #C5A059; /* Muted gold */
+  --color-matrix-amber: #D97706; /* Subtle amber */
+  --color-matrix-blue: #1E3A8A; /* Deep blue */
+  --color-matrix-border: #E5E4E2;
 }
 
 body {
@@ -15,26 +16,40 @@ body {
   color: var(--color-matrix-ink);
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
 }
 
-.mono {
-  font-family: var(--font-mono);
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  color: var(--color-matrix-ink);
 }
 
-.grid-bg {
-  background-image: linear-gradient(to right, #f3f4f6 1px, transparent 1px),
-    linear-gradient(to bottom, #f3f4f6 1px, transparent 1px);
-  background-size: 40px 40px;
+.btn-primary {
+  @apply bg-matrix-ink text-white px-8 py-4 rounded-none font-bold uppercase tracking-widest text-[11px] hover:opacity-90 transition-all text-center block w-full md:inline-block md:w-auto;
+}
+
+.btn-secondary {
+  @apply border border-matrix-ink text-matrix-ink px-8 py-4 rounded-none font-bold uppercase tracking-widest text-[11px] hover:bg-matrix-ink hover:text-white transition-all text-center block w-full md:inline-block md:w-auto;
+}
+
+.btn-accent {
+  @apply bg-matrix-accent text-white px-8 py-4 rounded-none font-bold uppercase tracking-widest text-[11px] hover:opacity-90 transition-all text-center block w-full md:inline-block md:w-auto;
+}
+
+.section-container {
+  @apply max-w-5xl mx-auto px-6 py-20;
 }
 
 ::-webkit-scrollbar {
   width: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: #ffffff;
+  background: var(--color-matrix-bg);
 }
 ::-webkit-scrollbar-thumb {
-  background: #e5e7eb;
+  background: var(--color-matrix-border);
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #d1d5db;
